@@ -61,3 +61,80 @@
 
  
 // Diğer modüllerde kullanılabilmesi için routerı "exports" nesnesine eklemeyi unutmayın.
+const router = require("express").Router();
+const bcrypt = require("bcryptjs");
+
+const Users = require("../users/users-model");
+
+const {
+  checkUsernameFree,
+  checkUsernameExists,
+  checkPasswordLength,
+} = require("./auth-middleware");
+
+// KAYIT OLMA
+router.post(
+  "/register",
+   checkUsernameFree,
+  checkPasswordLength,
+  async (req, res, next) => {
+    try {
+      const kullanici = req.body;
+      kullanici.password = bcrypt.hashSync(kullanici.password, 8);
+      const yeniKullanici = await Users.ekle(kullanici);
+      res.status(201).json(yeniKullanici);
+    } catch (error) {
+      next(error);
+    }
+  }
+);
+
+// GİRİŞ YAPMA
+router.post(
+  "/login",
+    checkUsernameExists,
+  checkPasswordLength,
+  async (req, res, next) => {
+    try {
+      const sifreDogruMu = bcrypt.compareSync(
+        req.body.password,
+        req.user.password
+      );
+
+      if (!sifreDogruMu) {
+        return res.status(401).json({
+          message: "Geçersiz kriter!",
+        });
+      }
+
+      req.session.userId = req.user.user_id;
+
+      res.status(200).json({
+        message: "Hoşgeldin " + req.user.username + "!",
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+);
+
+// ÇIKIŞ YAPMA
+router.get("/logout", (req, res, next) => {
+  if (!req.session.userId) {
+    return res.status(200).json({
+      message: "Oturum bulunamadı!",
+    });
+  }
+    
+    req.session.destroy((error) => {
+      if (error) {
+        return next(error);
+      }
+
+      res.status(200).json({
+        message: "Çıkış yapildi",
+      });
+    });
+  });
+
+module.exports = router;

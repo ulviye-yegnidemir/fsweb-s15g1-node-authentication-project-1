@@ -1,0 +1,184 @@
+{
+  "results": {
+    "tool": {
+      "name": "jest"
+    },
+    "summary": {
+      "tests": 15,
+      "passed": 15,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1789503178940,
+      "stop": 1789503182812
+    },
+    "tests": [
+      {
+        "name": "[0] sanity check",
+        "duration": 129,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js"
+      },
+      {
+        "name": "server.js [POST] /api/auth/login [1] geçerli kriterlerle doğru mesajı içeriyor",
+        "duration": 218,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/login"
+      },
+      {
+        "name": "server.js [POST] /api/auth/login [2] kriterler geçerliyse \"cikolatacips\" cookiesi seçiliyor",
+        "duration": 160,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/login"
+      },
+      {
+        "name": "server.js [POST] /api/auth/login [3] kriterler geçersizse cookie seçilmiyor (saveUninitialized=false)",
+        "duration": 50,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/login"
+      },
+      {
+        "name": "server.js [POST] /api/auth/login [4] kriterler geçersizken doğru mesaj döndürülüyor",
+        "duration": 170,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/login"
+      },
+      {
+        "name": "server.js [POST] /api/auth/register [5] veritabanında yeni kullanıcı oluşturulabiliyor",
+        "duration": 93,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/register"
+      },
+      {
+        "name": "server.js [POST] /api/auth/register [6] kullanıcı parolaları başarılı kriptolanıyor",
+        "duration": 169,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/register"
+      },
+      {
+        "name": "server.js [POST] /api/auth/register [7] kayıtta cookie seçilmiyor (saveUninitialized=false)",
+        "duration": 95,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/register"
+      },
+      {
+        "name": "server.js [POST] /api/auth/register [8] kullanıcı nesnesi cevap veriliyor (user_id ve username)",
+        "duration": 82,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/register"
+      },
+      {
+        "name": "server.js [POST] /api/auth/register [9] username kullanımdaysa doğru mesaj",
+        "duration": 35,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/register"
+      },
+      {
+        "name": "server.js [POST] /api/auth/register [10] kısa şifre girildiyse doğru mesaj ve durum kodu",
+        "duration": 54,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [POST] /api/auth/register"
+      },
+      {
+        "name": "server.js [GET] /api/auth/logout [11] oturum varsa yok ediliyor \"cikolatacips\" cookiesi artık etkisiz",
+        "duration": 175,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [GET] /api/auth/logout"
+      },
+      {
+        "name": "server.js [GET] /api/auth/logout [12] kullanıcı giriş yapmdıysa doğru mesaj",
+        "duration": 34,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [GET] /api/auth/logout"
+      },
+      {
+        "name": "server.js [GET] /api/users [13] kullanıcı giriş yapmadıysa doğru mesaj ve durum kodu",
+        "duration": 43,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [GET] /api/users"
+      },
+      {
+        "name": "server.js [GET] /api/users [14] oturumla eşleşen bir \"cikolatacips\" cookiesi varsa ",
+        "duration": 174,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\engin\\Desktop\\UnRar\\fsweb-s15g1-node-authentication-project-1\\codegrade_mvp.test.js > server.js > [GET] /api/users"
+      }
+    ]
+  }
+}
